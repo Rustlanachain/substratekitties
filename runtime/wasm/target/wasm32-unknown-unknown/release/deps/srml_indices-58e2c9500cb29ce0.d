@@ -1,0 +1,10 @@
+/Users/macbookpro/Desktop/Blockchain/Substrate/substrate-package/substratekitties/runtime/wasm/target/wasm32-unknown-unknown/release/deps/srml_indices-58e2c9500cb29ce0.rmeta: /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/indices/src/lib.rs /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/indices/src/mock.rs /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/indices/src/address.rs /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/indices/src/tests.rs
+
+/Users/macbookpro/Desktop/Blockchain/Substrate/substrate-package/substratekitties/runtime/wasm/target/wasm32-unknown-unknown/release/deps/libsrml_indices-58e2c9500cb29ce0.rlib: /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/indices/src/lib.rs /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/indices/src/mock.rs /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/indices/src/address.rs /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/indices/src/tests.rs
+
+/Users/macbookpro/Desktop/Blockchain/Substrate/substrate-package/substratekitties/runtime/wasm/target/wasm32-unknown-unknown/release/deps/srml_indices-58e2c9500cb29ce0.d: /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/indices/src/lib.rs /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/indices/src/mock.rs /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/indices/src/address.rs /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/indices/src/tests.rs
+
+/Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/indices/src/lib.rs:
+/Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/indices/src/mock.rs:
+/Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/indices/src/address.rs:
+/Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/indices/src/tests.rs:

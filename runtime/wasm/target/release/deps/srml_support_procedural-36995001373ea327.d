@@ -1,0 +1,8 @@
+/Users/macbookpro/Desktop/Blockchain/Substrate/substrate-package/substratekitties/runtime/wasm/target/release/deps/libsrml_support_procedural-36995001373ea327.dylib: /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/support/procedural/src/lib.rs /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/support/procedural/src/storage/mod.rs /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/support/procedural/src/storage/impls.rs /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/support/procedural/src/storage/transformation.rs
+
+/Users/macbookpro/Desktop/Blockchain/Substrate/substrate-package/substratekitties/runtime/wasm/target/release/deps/srml_support_procedural-36995001373ea327.d: /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/support/procedural/src/lib.rs /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/support/procedural/src/storage/mod.rs /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/support/procedural/src/storage/impls.rs /Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/support/procedural/src/storage/transformation.rs
+
+/Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/support/procedural/src/lib.rs:
+/Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/support/procedural/src/storage/mod.rs:
+/Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/support/procedural/src/storage/impls.rs:
+/Users/macbookpro/.cargo/git/checkouts/substrate-7e08433d4c370a21/fc206f3/srml/support/procedural/src/storage/transformation.rs:

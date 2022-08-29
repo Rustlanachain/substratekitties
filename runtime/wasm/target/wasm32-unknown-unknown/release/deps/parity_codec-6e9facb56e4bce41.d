@@ -1,0 +1,10 @@
+/Users/macbookpro/Desktop/Blockchain/Substrate/substrate-package/substratekitties/runtime/wasm/target/wasm32-unknown-unknown/release/deps/parity_codec-6e9facb56e4bce41.rmeta: /Users/macbookpro/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-codec-3.5.4/src/lib.rs /Users/macbookpro/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-codec-3.5.4/src/codec.rs /Users/macbookpro/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-codec-3.5.4/src/joiner.rs /Users/macbookpro/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-codec-3.5.4/src/keyedvec.rs
+
+/Users/macbookpro/Desktop/Blockchain/Substrate/substrate-package/substratekitties/runtime/wasm/target/wasm32-unknown-unknown/release/deps/libparity_codec-6e9facb56e4bce41.rlib: /Users/macbookpro/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-codec-3.5.4/src/lib.rs /Users/macbookpro/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-codec-3.5.4/src/codec.rs /Users/macbookpro/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-codec-3.5.4/src/joiner.rs /Users/macbookpro/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-codec-3.5.4/src/keyedvec.rs
+
+/Users/macbookpro/Desktop/Blockchain/Substrate/substrate-package/substratekitties/runtime/wasm/target/wasm32-unknown-unknown/release/deps/parity_codec-6e9facb56e4bce41.d: /Users/macbookpro/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-codec-3.5.4/src/lib.rs /Users/macbookpro/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-codec-3.5.4/src/codec.rs /Users/macbookpro/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-codec-3.5.4/src/joiner.rs /Users/macbookpro/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-codec-3.5.4/src/keyedvec.rs
+
+/Users/macbookpro/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-codec-3.5.4/src/lib.rs:
+/Users/macbookpro/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-codec-3.5.4/src/codec.rs:
+/Users/macbookpro/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-codec-3.5.4/src/joiner.rs:
+/Users/macbookpro/.cargo/registry/src/github.com-1ecc6299db9ec823/parity-codec-3.5.4/src/keyedvec.rs:

@@ -1,0 +1,1 @@
+{"rustc":4717714829311389797,"features":"[]","target":14667629910450709206,"profile":11675693005745566725,"path":10466938839627102610,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"wasm32-unknown-unknown/release/.fingerprint/nodrop-5caf28031b7ad4ce/dep-lib-nodrop"}}],"rustflags":["-C","link-arg=--export-table"],"metadata":716746209707183303,"config":0}
