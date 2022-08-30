@@ -1,6 +1,7 @@
 use support::{decl_storage, decl_module, StorageValue,dispatch::Result,StorageMap};
 use system::ensure_signed;
-
+use runtime_primitives::traits::{As, Hash};
+use parity_codec::{Encode, Decode};
 
 #[derive(Encode, Decode, Default, Clone, PartialEq)]
 #[cfg_attr(feature = "std", derive(Debug))]
@@ -12,20 +13,43 @@ pub struct Kitty<Hash, Balance> {
 }
 pub trait Trait: balances::Trait {}
 
+// decl_storage! {
+//     trait Store for Module<T: Trait> as KittyStorage {
+//         // Declare storage and getter functions here
+//         Value: map T::AccountId => u64;
+//     }
+// }
 decl_storage! {
     trait Store for Module<T: Trait> as KittyStorage {
-        // Declare storage and getter functions here
-        Value: map T::AccountId => u64;
+        OwnedKitty get(kitty_of_owner): map T::AccountId => Kitty<T::Hash, T::Balance>;
     }
 }
+// decl_module! {
+//     pub struct Module<T: Trait> for enum Call where origin: T::Origin {
+//         // Declare public functions here
+//         fn set_value(origin, value: u64) -> Result {
+//             let sender = ensure_signed(origin)?;
 
+//             <Value<T>>::insert(sender, value);
+
+//             Ok(())
+//         }
+//     }
+// }
 decl_module! {
     pub struct Module<T: Trait> for enum Call where origin: T::Origin {
-        // Declare public functions here
-        fn set_value(origin, value: u64) -> Result {
+
+        fn create_kitty(origin) -> Result {
             let sender = ensure_signed(origin)?;
 
-            <Value<T>>::insert(sender, value);
+            let new_kitty = Kitty {
+                id: <T as system::Trait>::Hashing::hash_of(&0),
+                dna: <T as system::Trait>::Hashing::hash_of(&0),
+                price: <T::Balance as As<u64>>::sa(0),
+                gen: 0,
+            };
+
+            <OwnedKitty<T>>::insert(&sender, new_kitty);
 
             Ok(())
         }
