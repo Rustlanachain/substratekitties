@@ -1,6 +1,15 @@
 use support::{decl_storage, decl_module, StorageValue,dispatch::Result,StorageMap};
 use system::ensure_signed;
 
+
+#[derive(Encode, Decode, Default, Clone, PartialEq)]
+#[cfg_attr(feature = "std", derive(Debug))]
+pub struct Kitty<Hash, Balance> {
+    id: Hash,
+    dna: Hash,
+    price: Balance,
+    gen: u64,
+}
 pub trait Trait: balances::Trait {}
 
 decl_storage! {
