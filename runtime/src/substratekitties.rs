@@ -13,29 +13,17 @@ pub struct Kitty<Hash, Balance> {
 }
 pub trait Trait: balances::Trait {}
 
-// decl_storage! {
-//     trait Store for Module<T: Trait> as KittyStorage {
-//         // Declare storage and getter functions here
-//         Value: map T::AccountId => u64;
-//     }
-// }
+
 decl_storage! {
     trait Store for Module<T: Trait> as KittyStorage {
-        OwnedKitty get(kitty_of_owner): map T::AccountId => Kitty<T::Hash, T::Balance>;
+        Kitties get(kitty): map T::Hash => Kitty<T::Hash, T::Balance>;
+        KittyOwner get(owner_of): map T::Hash => Option<T::AccountId>;
+        OwnedKitty get(kitty_of_owner): map T::AccountId => T::Hash;
+
+        Nonce: u64;
     }
 }
-// decl_module! {
-//     pub struct Module<T: Trait> for enum Call where origin: T::Origin {
-//         // Declare public functions here
-//         fn set_value(origin, value: u64) -> Result {
-//             let sender = ensure_signed(origin)?;
 
-//             <Value<T>>::insert(sender, value);
-
-//             Ok(())
-//         }
-//     }
-// }
 decl_module! {
     pub struct Module<T: Trait> for enum Call where origin: T::Origin {
 
