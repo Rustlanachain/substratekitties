@@ -1,5 +1,5 @@
 use support::{decl_storage, decl_module, StorageValue, StorageMap,
-    dispatch::Result, ensure};
+    dispatch::Result, ensure,decl_event};
 use system::ensure_signed;
 use runtime_primitives::traits::{As, Hash};
 use parity_codec::{Encode, Decode};
@@ -13,8 +13,18 @@ pub struct Kitty<Hash, Balance> {
     gen: u64,
 }
 
-pub trait Trait: balances::Trait {}
-
+pub trait Trait: balances::Trait {
+    type Event: From<Event<Self>> + Into<<Self as system::Trait>::Event>;
+}
+decl_event!(
+    pub enum Event<T>
+    where
+        <T as system::Trait>::AccountId,
+        <T as system::Trait>::Hash
+    {
+        Created(AccountId, Hash),
+    }
+);
 decl_storage! {
     trait Store for Module<T: Trait> as KittyStorage {
         Kitties get(kitty): map T::Hash => Kitty<T::Hash, T::Balance>;
