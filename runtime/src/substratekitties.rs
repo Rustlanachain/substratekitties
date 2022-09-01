@@ -1,4 +1,5 @@
-use support::{decl_storage, decl_module, StorageValue,dispatch::Result,StorageMap};
+use support::{decl_storage, decl_module, StorageValue, StorageMap,
+    dispatch::Result, ensure};
 use system::ensure_signed;
 use runtime_primitives::traits::{As, Hash};
 use parity_codec::{Encode, Decode};
@@ -11,8 +12,8 @@ pub struct Kitty<Hash, Balance> {
     price: Balance,
     gen: u64,
 }
-pub trait Trait: balances::Trait {}
 
+pub trait Trait: balances::Trait {}
 
 decl_storage! {
     trait Store for Module<T: Trait> as KittyStorage {
