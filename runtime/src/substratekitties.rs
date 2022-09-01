@@ -30,14 +30,24 @@ decl_module! {
         fn create_kitty(origin) -> Result {
             let sender = ensure_signed(origin)?;
 
+            let nonce = <Nonce<T>>::get();
+            let random_hash = (<system::Module<T>>::random_seed(), &sender, nonce)
+                .using_encoded(<T as system::Trait>::Hashing::hash);
+
+            ensure!(!<KittyOwner<T>>::exists(random_hash), "Kitty already exists");
+
             let new_kitty = Kitty {
-                id: <T as system::Trait>::Hashing::hash_of(&0),
-                dna: <T as system::Trait>::Hashing::hash_of(&0),
+                id: random_hash,
+                dna: random_hash,
                 price: <T::Balance as As<u64>>::sa(0),
                 gen: 0,
             };
 
-            <OwnedKitty<T>>::insert(&sender, new_kitty);
+            <Kitties<T>>::insert(random_hash, new_kitty);
+            <KittyOwner<T>>::insert(random_hash, &sender);
+            <OwnedKitty<T>>::insert(&sender, random_hash);
+
+            <Nonce<T>>::mutate(|n| *n += 1);
 
             Ok(())
         }
