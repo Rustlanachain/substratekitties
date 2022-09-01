@@ -37,7 +37,7 @@ decl_storage! {
 
 decl_module! {
     pub struct Module<T: Trait> for enum Call where origin: T::Origin {
-
+        fn deposit_event<T>() = default;
         fn create_kitty(origin) -> Result {
             let sender = ensure_signed(origin)?;
 
@@ -59,6 +59,7 @@ decl_module! {
             <OwnedKitty<T>>::insert(&sender, random_hash);
 
             <Nonce<T>>::mutate(|n| *n += 1);
+            Self::deposit_event(RawEvent::Created(sender, random_hash));
 
             Ok(())
         }

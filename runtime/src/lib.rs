@@ -199,7 +199,9 @@ impl sudo::Trait for Runtime {
 
 
 // Add this line
-impl substratekitties::Trait for Runtime {}
+impl substratekitties::Trait for Runtime {
+	type Event = Event;
+}
 
 construct_runtime!(
 	pub enum Runtime with Log(InternalLog: DigestItem<Hash, AuthorityId, AuthoritySignature>) where
@@ -215,7 +217,7 @@ construct_runtime!(
 		Balances: balances,
 		Sudo: sudo,
 		// Used for the module template in `./template.rs`
-		Substratekitties: substratekitties::{Module, Call, Storage},
+		Substratekitties: substratekitties::{Module, Call, Storage, Event<T>},
 
 	}
 );
